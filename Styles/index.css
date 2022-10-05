@@ -4,11 +4,11 @@
 }
 
 body {
-    background-color: black;
+    background-color: brown;
 }
 
 header {
-    background-color: brown;
+    background-color: black;
     width: 85%;
     height: 80px;
     display: flex;
@@ -24,5 +24,86 @@ header {
 .Logo-text {
     font-size: 40px;
     font-weight: bold;
+    color: yellow;
 
 }
+
+.Nav-bar ul {
+    display: flex;
+}
+
+.Nav-bar ul li {
+    display: block;
+    color: yellow;
+    list-style: none;
+    font-size: 25px;
+    padding: 10px 25px;
+    margin: 0;
+}
+
+.Nav-bar li a {
+    text-decoration: none;
+    border-radius: 7px;
+    color: yellow;
+    padding: 5px;
+    display: block;
+}
+
+.Nav-bar ul li a:hover {
+    color: black;
+    background-color: orange;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 9px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .Bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .Nav-bar {
+        display: none;
+        width: 100%;
+    }
+
+    .Nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Nav-bar ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .Nav-bar li {
+        text-align: center;
+    }
+
+    .Nav-bar li a {
+        padding: 1px 1px;
+    }
+
+    .Nav-bar.active {
+        display: flex;
+    }
+
+    .open-menu, .close-menu;
+}
+
