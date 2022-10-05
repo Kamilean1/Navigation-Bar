@@ -73,6 +73,12 @@ header {
 }
 
 @media (max-width: 600px) {
+    .Logo-text {
+        position: absolute;
+        display: flex;
+        margin-top: -20px;
+    }
+
     .toggle-button {
         display: flex;
     }
@@ -84,12 +90,15 @@ header {
 
     .Nav-bar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: left;
+        margin-top: 200px;
+        
     }
 
     .Nav-bar ul {
         width: 100%;
         flex-direction: column;
+        margin-top: 100px;
     }
 
     .Nav-bar li {
@@ -104,6 +113,10 @@ header {
         display: flex;
     }
 
-    .open-menu, .close-menu;
-}
+    .Nav-bar li a:hover {
+        border-radius: 10px;
+        background-color: orange;
+        margin: 1px;
+    }
 
+}
